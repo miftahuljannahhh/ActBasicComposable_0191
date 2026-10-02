@@ -55,6 +55,15 @@ fun Tugas(modifier: Modifier = Modifier) {
                 fontSize = 14.sp,
                 color = Color.White
             )
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Image(
+                painter = logo,
+                contentDescription = null,
+                modifier = Modifier.size(120.dp),
+                contentScale = ContentScale.Fit
+            )
         }
     }
 }
