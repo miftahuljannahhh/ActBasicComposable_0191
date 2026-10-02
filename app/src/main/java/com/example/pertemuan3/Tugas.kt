@@ -74,7 +74,7 @@ fun Tugas(modifier: Modifier = Modifier) {
                 color = Color.Red
             )
             Text(
-                text = "MiftahuLJannah",
+                text = "MiftahuL Jannah",
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
