@@ -22,3 +22,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
+@Composable
+fun Tugas(modifier: Modifier = Modifier) {
+    val latar = painterResource(id = R.drawable.latar)
+    val logo = painterResource(id = R.drawable.logo)
+    val foto = painterResource(id = R.drawable.foto)
+}
