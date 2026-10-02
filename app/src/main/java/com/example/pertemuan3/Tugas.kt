@@ -1,4 +1,4 @@
-package com.example.mylayout
+package com.example.pertemuan3
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -22,7 +22,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.pertemuan3.R
+import androidx.compose.ui.BiasAlignment
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
+
 
 @Composable
 fun Tugas(modifier: Modifier = Modifier) {
@@ -35,7 +38,39 @@ fun Tugas(modifier: Modifier = Modifier) {
             painter = latar,
             contentDescription = null,
             modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop
+            contentScale = ContentScale.Crop,
+            alignment = BiasAlignment(horizontalBias = -0.3f, verticalBias = 0f)
+        )
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    Brush.radialGradient(
+                        colors = listOf(
+                            Color(0xFFFFF3D6).copy(alpha = 0.65f),
+                            Color(0xFFF5C77E).copy(alpha = 0.30f),
+                            Color.Transparent
+                        ),
+                        center = Offset(0f, 0f),
+                        radius = 1000f
+                    )
+                )
+        )
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    Brush.radialGradient(
+                        colors = listOf(
+                            Color(0xFFFFF3D6).copy(alpha = 0.45f),
+                            Color(0xFFF5C77E).copy(alpha = 0.20f),
+                            Color.Transparent
+                        ),
+                        radius = 900f
+                    )
+                )
         )
 
         Column(
@@ -52,7 +87,7 @@ fun Tugas(modifier: Modifier = Modifier) {
             )
             Text(
                 text = "Ini adalah halaman login,",
-                fontSize = 14.sp,
+                fontSize = 18.sp,
                 color = Color.White
             )
 
@@ -61,7 +96,7 @@ fun Tugas(modifier: Modifier = Modifier) {
             Image(
                 painter = logo,
                 contentDescription = null,
-                modifier = Modifier.size(120.dp),
+                modifier = Modifier.size(180.dp),
                 contentScale = ContentScale.Fit
             )
 
@@ -69,13 +104,13 @@ fun Tugas(modifier: Modifier = Modifier) {
 
             Text(
                 text = "Nama",
-                fontSize = 14.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Red
             )
             Text(
-                text = "MiftahuL Jannah",
-                fontSize = 14.sp,
+                text = "Miftahul Jannah",
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
