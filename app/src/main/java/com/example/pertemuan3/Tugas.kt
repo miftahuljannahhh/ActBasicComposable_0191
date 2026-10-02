@@ -64,6 +64,8 @@ fun Tugas(modifier: Modifier = Modifier) {
                 modifier = Modifier.size(120.dp),
                 contentScale = ContentScale.Fit
             )
+
+            Spacer(modifier = Modifier.height(60.dp))
         }
     }
 }
