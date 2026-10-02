@@ -85,6 +85,19 @@ fun Tugas(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
             )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Image(
+                painter = foto,
+                contentDescription = null,
+                modifier = Modifier
+                    .size(260.dp)
+                    .clip(CircleShape)
+                    .background(Color(0xFFE8E8F5))
+                    .border(width = 3.dp, color = Color.White, shape = CircleShape),
+                contentScale = ContentScale.Fit
+            )
         }
     }
 }
