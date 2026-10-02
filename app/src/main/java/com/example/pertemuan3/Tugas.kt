@@ -29,3 +29,5 @@ fun Tugas(modifier: Modifier = Modifier) {
     val logo = painterResource(id = R.drawable.logo)
     val foto = painterResource(id = R.drawable.foto)
 }
+    Box(modifier = modifier.fillMaxSize()) {
+    }
