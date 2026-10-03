@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Pertemuan3Theme {
-                Tugas()
+                TugasLogin()
             }
         }
     }

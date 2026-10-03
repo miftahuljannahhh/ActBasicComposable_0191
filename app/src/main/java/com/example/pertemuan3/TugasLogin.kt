@@ -28,7 +28,7 @@ import androidx.compose.ui.graphics.Brush
 
 
 @Composable
-fun Tugas(modifier: Modifier = Modifier) {
+fun TugasLogin(modifier: Modifier = Modifier) {
     val latar = painterResource(id = R.drawable.latar)
     val logo = painterResource(id = R.drawable.logo)
     val foto = painterResource(id = R.drawable.foto)
